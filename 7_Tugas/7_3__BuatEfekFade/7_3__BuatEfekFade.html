@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Membuat Efek Fade </title>
+	<script type="text/javascript" src="../../jquery-3.4.1.min.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(
+			function(){	
+
+				$(".btn_fadeIn").click(
+					function(){
+						alert("Tombol FadeIn Ditekan");
+						$(".kotak").fadeIn();
+					}
+				);
+
+				$(".btn_fadeOut").click(
+					function(){
+						alert("Tombol FadeOut Ditekan");
+						$(".kotak").fadeOut();
+					}
+				);
+
+				$(".btn_fadeTo").click(
+					function(){
+						//fadeTo("speed", opacity) Required Parameter
+						alert("Tombol Fade To 0.3 Ditekan");
+						$(".kotak").fadeTo("slow", 0.3);
+					}
+				);
+
+			}
+		);
+
+	</script>
+
+	<style type="text/css">
+		
+		.kotak{
+			width: 240px;
+			height: 160px;
+			background-color: yellow;
+			border: 2px solid black;
+			margin-bottom: 10px;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="kotak"></div>
+	<div>
+		<input type="button" class="btn_fadeOut" value="Fade Out">
+		<input type="button" class="btn_fadeIn" value="Fade In">
+		<input type="button" class="btn_fadeTo" value="Fade to 0.3">
+	</div>
+
+</body>
+</html>

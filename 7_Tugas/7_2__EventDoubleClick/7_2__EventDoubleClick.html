@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Event Double Klik Ganti Warna </title>
+	<script type="text/javascript" src="../../jquery-3.4.1.min.js"></script>
+
+	<script type="text/javascript">
+		
+		$(document).ready(
+
+			function(){
+
+				$(".a").dblclick(
+					function(){
+						$(".a").addClass("selected");
+					}
+				);
+
+				$(".b").dblclick(
+					function(){
+						$(".b").addClass("selected");
+					}
+				);
+
+				$(".c").dblclick(
+					function(){
+						$(".c").addClass("selected");
+					}
+				);
+
+				$(".d").dblclick(
+					function(){
+						$(".d").addClass("selected");
+					}
+				);
+
+			}
+
+		);
+
+	</script>
+
+	<style type="text/css">
+		
+		body div{
+			width: 80px;
+			height: 80px;
+			background-color: yellow;
+			margin-right: 10px;
+			float: left;
+		}
+
+		.selected{
+			background-color: red;
+		}
+
+	</style>
+</head>
+<body>
+
+	<p> Klik 2x pada setiap kotak untuk mengubah warna </p>
+
+	<div class="a"></div>
+	<div class="b"></div>
+	<div class="c"></div>
+	<div class="d"></div>
+
+</body>
+</html>

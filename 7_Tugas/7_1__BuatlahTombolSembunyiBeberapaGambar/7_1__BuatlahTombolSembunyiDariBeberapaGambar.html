@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Menyembunyikan Beberapa Gambar </title>
+	<script type="text/javascript" src="../../jquery-3.4.1.min.js"></script>
+
+	<script type="text/javascript">
+		
+		$(document).ready(
+
+			function(){
+
+				// Tombol class="sembunyi1" dan class="tampilkan1"
+				$(".sembunyi1").click(
+					function(){
+						alert("sembunyikan gambar ke 1");
+						$(".gambar1").hide("slow");
+					}
+				);
+
+				$(".tampilkan1").click(
+					function(){
+						alert("tampilkan gambar ke 1");
+						$(".gambar1").show("slow");
+					}
+				);
+
+				// Tombol class="sembunyi2" dan class="tampilkan2"
+				$(".sembunyi2").click(
+					function(){
+						alert("sembunyikan gambar ke 2");
+						$(".gambar2").hide("slow");
+					}
+				);
+
+				$(".tampilkan2").click(
+					function(){
+						alert("tampilkan gambar ke 2");
+						$(".gambar2").show("slow");
+					}
+				);
+
+
+				// Tombol class="sembunyi3" dan class="tampilkan3"
+				$(".sembunyi3").click(
+					function(){
+						alert("sembunyikan gambar ke 3");
+						$(".gambar3").hide("slow");
+					}
+				);
+
+				$(".tampilkan3").click(
+					function(){
+						alert("tampilkan gambar ke 3");
+						$(".gambar3").show("slow");
+					}
+				);
+
+			}
+
+		);
+
+	</script>
+</head>
+<body>
+
+	<div>
+		<input type="button" class="sembunyi1" value="sembunyi 1">
+		<input type="button" class="tampilkan1" value="tampilkan 1">
+		<img src="images/gambar1.png" class="gambar1">
+	</div>
+
+	<div>
+		<input type="button" class="sembunyi2" value="sembunyi 2">
+		<input type="button" class="tampilkan2" value="tampilkan 2">
+		<img src="images/gambar2.png" class="gambar2">
+	</div>
+
+	<div>
+		<input type="button" class="sembunyi3" value="sembunyi 3">
+		<input type="button" class="tampilkan3" value="tampilkan 3">
+		<img src="images/gambar3.png" class="gambar3">
+	</div>
+
+</body>
+</html>
